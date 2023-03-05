@@ -6,7 +6,6 @@
         public string Area { get; set; }
         public string IterationPath { get; set; }
         public int Priority { get; set; }
-
         public DateTime? StartDate { get; set; }
         public DateTime? EndDate { get; set; }
         public double Efford { get; set; }
