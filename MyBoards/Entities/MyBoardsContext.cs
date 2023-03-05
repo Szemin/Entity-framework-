@@ -9,5 +9,11 @@ namespace MyBoards.Entities
         public DbSet<Tag> Tags { get; set; }
         public DbSet<Comment> Coments { get; set; }
         public DbSet<Address> Addresses { get; set; }
+
+        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+        {
+            optionsBuilder.UseSqlServer(//ścieżka do serwera
+                                        );
+        }
     }
 }
